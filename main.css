@@ -1,3 +1,10 @@
+*{
+    box-sizing: border-box;
+ }
+ html, body {
+    height: 100%;
+    margin: 0;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -9,9 +16,9 @@ body {
     font-size: 14px;
     color: #222;
     background: #fff;
+    justify-content: space-between;
 }
 nav {
-    border: 1px red solid;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -24,7 +31,6 @@ ul {
 }
 li {
     display: inline-block;
-    border: 1px red solid;
     margin: 0;
     padding: 0;
 }
@@ -38,7 +44,6 @@ nav li a {
     padding-right: 20px;
 }
 main {
-    border: 1px red solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,8 +52,42 @@ main .container {
     display: flex;
     justify-content: center;
 }
+main p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 28px;
+    font-size: small;
+}
 footer {
-    border: 1px red solid;
     display: flex;
     flex-direction: column;
+    background: #f2f2f2;
+    color: rgba(0,0,0,.54);
+}
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 30px;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+    flex-wrap: wrap;
+}
+footer .location {
+    padding: 15px 45px;
+    border-bottom: 1px solid #dadce0;
+}
+footer .about {
+    justify-content: space-between;
+}
+footer li {
+    padding: 0 15px;
+}
+footer li a {
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+}
+a:hover {
+    text-decoration: underline;
 }
